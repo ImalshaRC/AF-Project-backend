@@ -57,7 +57,7 @@ router.route("/get/:id").get(async (req, res) => {
         res.json(Data);
     }).catch((err) => {
         console.log(err.message);
-        res.status(500).send({status: "error with fetched header"});
+        res.status(500).send({status: "error with fetched header data"});
     })
 });
 
